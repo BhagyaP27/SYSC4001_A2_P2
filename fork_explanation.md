@@ -1,4 +1,4 @@
-## 3 Part 2.3: What fork Does (Student 1)
+## 3 Part 2.3: What fork Does (Student 2)
 
 **One-line idea:** `fork` creates a **new process** (the **child**) that is a near-identical **copy** of the calling process (the **parent**), with a few exceptions.
 
