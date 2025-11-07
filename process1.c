@@ -2,6 +2,7 @@
  * @file process1.c
  * @brief SYSC 4001 Assignment  2 - Part II: Concurrent Processes
  * @author Bhagya Patel
+ * @author Tomas Alvarez
  * 
  */
 

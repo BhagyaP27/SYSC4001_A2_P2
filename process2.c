@@ -1,7 +1,9 @@
 /**
  * @file process2.c
  * @author Bhagya Patel
+ * @author Tomas Alvarez
  * @brief Process launched via exec - decrements counter
+ * 
  */
 
 #include <stdio.h>
