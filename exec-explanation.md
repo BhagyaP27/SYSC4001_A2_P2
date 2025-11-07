@@ -24,3 +24,9 @@ if (pid == 0) { // child
     int status; waitpid(pid, &status, 0);
 }
 ```
+
+### Conclusion: 
+## What does the $\text{exec}$ function call do? 💻
+
+family of functions is fundamentally responsible for replacing the entire process image of the calling process with a newly loaded program.  It takes the specified program file and loads it directly into the current process's memory space, overwriting the existing code, data, and stack, and then starts execution from the new program's entry point (e.g., main). Crucially, the process's identity, specifically its Process ID (PID), does not change; it's the *content* of the running process that is transformed. Since the calling program is entirely replaced, a successful exec call never returns to the original function call point, as that code no longer exists in memory. This function is typically executed by a child process immediately after a successful fork() call to enable the child to run a different application than its parent.
+

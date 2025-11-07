@@ -36,3 +36,6 @@ if (pid < 0) {
     printf("Child exited with status %d\n", WEXITSTATUS(status));
 }
 ```
+
+### Conclusion: 
+The fork() system call is used in Unix-based systems to create a new process by duplicating the calling process. When a program calls fork(), the operating system makes an almost exact copy of the parent process, assigning it a new process ID and independent memory space. After the call, both the parent and child processes continue execution from the same point in the code, but fork() returns different values to each: zero to the child and the child’s PID to the parent. This difference allows the program to distinguish between them and execute separate code paths if needed. In essence, fork90 enables true parallel execution by letting one program split into two running processes that cooperate independently.
